@@ -14,7 +14,8 @@
 
     <div class="row">
       <div class="col-md-12 mb-3">
-        <input id="busquedaFiltro" type="text" class="form-control w-50 mx-auto" placeholder="Busqueda por nombre" />
+        <input id="busquedaFiltro" type="text" class="form-control w-50 mx-auto rounded-pill" 
+          placeholder="Busqueda por nombre" />
       </div>
 
       <div class="col-md-6">
@@ -48,31 +49,29 @@
   </main>
 
   <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="infoModalLabel">Detalles de Usuario</h5>
+          <h5 class="modal-title text-center fw-bold w-100" id="infoModalLabel">Detalles de Usuario</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
-          <table class="div-table table">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Edad</th>
-                <th scope="col">Sexo</th>
-                <th scope="col">Ocupación</th>
-                <th scope="col">Nivel de estudios</th>
-              </tr>
-            </thead>
-            <tbody id="tablaDataModal">
-  
-            </tbody>
-          </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
+          <div class="table-responsive">
+            <table class="div-table table">
+              <thead class="table-dark text-center">
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Edad</th>
+                  <th scope="col">Sexo</th>
+                  <th scope="col">Ocupación</th>
+                  <th scope="col">Nivel de estudios</th>
+                </tr>
+              </thead>
+              <tbody class="text-center" id="tablaDataModal">
+              </tbody>
+            </table>
+          </div>
+        </div>        
       </div>
     </div>
   </div>

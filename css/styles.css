@@ -15,11 +15,11 @@ main {
 }
 
 .table tbody tr {
-  border-bottom: 2px solid #000; 
+  border-bottom: 2px solid black; 
 }
 
 .table th, .table td {
-  border: 2px solid #000; 
+  border: 2px solid black; 
 }
 
 .nombre-usuario {
@@ -32,4 +32,13 @@ main {
   text-decoration: underline; 
 }
 
+@media (max-width: 576px) { 
+  .modal-body table {
+    font-size: 14px; 
+  }
 
+  .modal-body th, 
+  .modal-body td {
+    padding: 4px; 
+  }
+}
