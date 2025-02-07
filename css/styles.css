@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: lightslategray;
+}
+
+.div-table {
+  background-color: aliceblue;
+}
+
+.table tbody tr {
+  border-bottom: 2px solid #000; 
+}
+
+.table th, .table td {
+  border: 2px solid #000; 
+}
+
+.nombre-usuario {
+  cursor: pointer;  
+  text-decoration: none; 
+}
+
+.nombre-usuario:hover {
+  color: #007bff;
+  text-decoration: underline; 
+}
+
+
